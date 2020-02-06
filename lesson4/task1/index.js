@@ -1,8 +1,10 @@
-const n = 120;
-let sum = 0;
+const m = 100;
+const n = 5;
 
-for (let i = 0; i <= n; i++) {
-    sum += i;
+let result = 1;
+
+for (let i = m; i <= n; i++) {
+    if (i % 2 === 1) {
+        result *= i;
+    }
 }
-
-console.log(sum);
